@@ -10,13 +10,9 @@ import java.util.List;
  * @author saul_
  */
 public interface CarteleraService {
-    Cartelera agregarCartelera();
-    Cartelera actualizarCartelera();
-    Pelicula agregarPelicula();
-    Horario mostrarHorarios();
-    Pelicula mostrarPeliculas();
-    void eliminarPelicula();
-    void eliminarHorario();
-    void eliminarCartelera();
+    Cartelera agregarCartelera(Cartelera nuevaCartelera);
+    Cartelera actualizarCartelera(Integer id, Cartelera carteleraActualizada);
+    List<Pelicula> mostrarPeliculas(Integer Id);
+    void eliminarCartelera(Integer id);
     
 }
